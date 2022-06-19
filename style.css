@@ -1,0 +1,280 @@
+/********Header, h2, h3, h4 et font-family = @google_font***********/
+/********Nav et Listes à puces**********/
+/********Body, p***********/
+/********Tableau et Formulaire*********/
+/********div, id#, .class************/
+/********Footer, icons, font-awesome************/
+/************** effets de souris ********************/
+
+
+/********** font-family = @google_font ********/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@200&display=swap'); /* Je suis une 'police' importer du site Google fonts */
+
+
+/********Body***********/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    padding: 1.5px;
+    font-family: 'open-sans', cursive;
+    font-size: 1.2rem;
+    min-height: 100vh;
+    text-align: justify;
+}
+
+p {
+    margin: 5px;
+    font-weight: 500;
+}
+
+/* ********** style js + class .box ************ */
+
+.box  {
+    margin: 250px 5px 200px -80px;
+    padding: 0px 5px 200px -80px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 8px 5px 3px 5px;
+    text-transform: uppercase;
+    text-decoration: underline rgba(136, 136, 136, 0.877);
+    text-align: center;
+    color: rgba(255, 255, 255, 0.788);
+    text-shadow: 1px 2px 3px rgb(32, 32, 32);
+
+}
+
+
+
+/****** Header, em, h2, h3, h4, image Principale****** Gros changement et plus de background */
+
+/* Ne sert à rien */
+em {
+    margin: 5px;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 8px 5px 3px 5px;
+    text-transform: uppercase;
+    text-decoration: underline rgba(29, 29, 29, 0.877);
+    color: rgba(22, 22, 22, 0.966);
+    text-shadow: 1px 2px 3px rgb(32, 32, 32);
+}
+
+h2, h3, h4 {
+    padding: 5px;
+    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+    background: rgb(255, 181, 154);
+    border-radius: 8px 5px 3px 5px;
+    text-transform: uppercase;
+    text-decoration: underline rgba(29, 29, 29, 0.877);
+    color: rgba(22, 22, 22, 0.966);
+    text-shadow: 1px 2px 3px rgb(32, 32, 32);
+}
+
+#videoPrincipale {
+    overflow: hidden;
+    background-size: cover;
+    width: 100%;
+    border-radius: 5px;
+}
+/********Nav et Listes à puces**********/
+nav {
+    margin: 0;
+    background: rgba(233, 177, 112, 0650);
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    opacity: 0.7;
+    top: -50px; /*Ajout plus tard*/
+    transition: 0.5s;
+    z-index: 3;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  list-style-type: none;
+  padding: 5px;
+}
+ 
+
+a {
+    text-decoration: none;
+    color: rgb(0, 157, 255);
+    transition: 0.28s ease-in-out;
+}
+
+/******** header, h1, class .button ************/
+
+h1 {
+    position: absolute;
+    top: 9rem;
+    left: 5rem;
+    color: rgba(37, 37, 37, 0.911);
+}
+
+.buton {
+    position: absolute;
+    bottom: 45%;
+    left: 50%;
+    height: 45px;
+    padding: 0px 50px 0px 50px;
+    background: rgba(209, 209, 209, 0.732);
+    border-radius: 8px 5px 3px 5px;
+    box-shadow: 1px 2px 3px rgba(183, 183, 183, 0.623);
+    text-transform: uppercase;
+    transform: translateX(-50%);
+    cursor: pointer;
+    display: flex;
+    transition: 0.5s ease;
+}
+
+i {
+    opacity: 0;
+    transform: translateX(10px);
+    transition: 0.4s ease;
+    padding: 7px 0px 0px 0px;
+}
+
+.buton:hover i {
+    opacity: 1;
+    transform: translateX(-20px);
+}
+
+.text {
+    margin: 0;
+    color: rgba(218, 218, 218, 0.992);
+    text-shadow: 1px 2px 3px rgb(32, 32, 32);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 700;
+    transform: translateX(10px);
+    transition: 0.4s ease;
+}
+
+.buton:hover .text {
+    transform: translateX(-10px);
+}
+.buton:hover {
+    filter: brightness(125%);
+}
+
+.buton:active {
+    transform: scale(0.90) translateX(-50%);
+}
+
+header {
+    float: right;
+}
+
+
+#logo {
+    font-family: cursive;
+    font-weight: bold;
+    float: left;
+}
+
+/********Tableau et Formulaire*********/
+table, td{
+    margin: 5px 0px 20px 15px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 3px;
+    box-shadow:  1px 2px 3px rgb(37, 37, 37);
+}
+
+th {
+    padding: 0px 50px;
+    font-family: 'poppins', sans-serif;
+    font-size: 1.2rem;
+    color: rgb(77, 77, 77);
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(61, 61, 61, 0.877);
+    text-decoration: underline rgb(34, 34, 34);
+}
+
+caption {
+    padding: 5px;
+    caption-side: bottom;
+}
+
+/* formulaire, footer */
+
+.container {
+    padding: 70px 350px 50px 15px;
+    position: relative;
+    z-index: 10;
+}
+
+form {
+    margin: auto;
+    padding: 5px 0px 50px 50px;
+    size: 15px;
+    border-radius: 12px;
+    margin: 5px 0px 20px 20px;
+    z-index: 10;
+    background: url(./media/nick-night-p9O_YJIZC7g-unsplash.jpg) no-repeat;
+    background-size: cover;
+}
+
+input, textarea {
+    border: none;
+    width: 55%;
+    padding: 15px 10px;
+    margin: 2px;
+    font-size: 1.2rem;
+    border: solid 1px;
+    border-radius: 6px 3px 5px 12px;
+    
+}
+
+button {
+    border: none;
+    width: 55%;
+    padding: 15px 10px;
+    margin: 2px;
+    font-size: 1.2rem;
+    border: solid 1px;
+    border-radius: 6px 3px 5px 12px;
+    pointer-events: fill;
+    cursor: pointer;
+}
+
+#icons, #ChristoCodeAndCraft {
+    display: flex;
+    padding: 50px 0px -1px 5px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgba(18, 18, 18, 0.934);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.934);
+}
+
+.fa {
+    padding-inline-start: 15px;
+}
+
+/* ********** Souris ************ */
+
+.mousemove {
+    height: 5px;
+    width: 5px;
+    border: 2px solid rgb(84, 84, 84);
+    border-radius: 50px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: 0.3s ease-out;
+
+  }
+
+/* ********** box ************ */
+
+
+
